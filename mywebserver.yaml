@@ -6,3 +6,8 @@
       apt:
         name: apache2
         state: present
+
+    - name: want to start apache webserver on ubuntu
+      apt:
+        name: apache2
+        state: started
