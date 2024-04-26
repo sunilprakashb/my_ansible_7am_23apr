@@ -18,11 +18,10 @@
       dnf:
         name: httpd
         state: present
-      when: ansible_os_family=="Redhat"
+      when: ansible_os_family=="RedHat"
 
     - name: i want to start httpd server on redhat
       service:
         name: httpd
         state: started
-      when: ansible_os_family=="Redhat"
-      
+      when: ansible_os_family=="RedHat"
