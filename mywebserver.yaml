@@ -5,7 +5,7 @@
     - name: install apache2 webserver
       apt:
         name: apache2
-        state: absent
+        state: present
       when: ansible_os_family=="Debian"
 
     - name: want to start apache webserver on ubuntu
