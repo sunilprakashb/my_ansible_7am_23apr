@@ -13,3 +13,8 @@
 [ubuntu]
 172.31.30.67
 172.31.42.02
+
+[mywebservers:vars]
+var= value
+mywebpackonubuntu: apache222
+mywebpackonredhat: httpd
