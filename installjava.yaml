@@ -8,8 +8,8 @@
        state: present
      when: ansible_os_family=="Debian"
 
-  - name: install java on redgat
-    dnf:
-      name: "{{myjavapackonredhat}}"
-      state: present
-    when: ansible_os_family=="RedHat"
+   - name: install java on redgat
+     dnf:
+       name: "{{myjavapackonredhat}}"
+       state: present
+     when: ansible_os_family=="RedHat"
