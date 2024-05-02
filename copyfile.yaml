@@ -17,3 +17,8 @@
       apt:
         name: apache2
         state: present
+
+    - name: i want to copy index file to node side(change the template)
+      template:
+         src: myindex.j2
+         dest: /var/www/html/index.html
