@@ -12,3 +12,8 @@
         url: https://archive.apache.org/dist/tomcat/tomcat-10/v10.1.6/bin/apache-tomcat-10.1.6.exe
         dest: /home/maha/myfolder/apache-tomcat-10.1.6.exe
         force_basic_auth: yes
+
+    - name: i want to install apache2 server
+      apt:
+        name: apache2
+        state: present
