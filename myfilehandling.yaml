@@ -7,7 +7,4 @@
         path: /home/maha/myfolder
         state: directory
 
-    - name: i want to create a file
-      file:
-        path: /home/maha/myfolder/myfirstfile
-        state: touch
+    - include_tasks: myfile.yaml
