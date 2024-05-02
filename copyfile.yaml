@@ -6,3 +6,9 @@
       copy:
         src: mytestfile
         dest: /home/maha/myfolder
+
+    - name: i want to download file from internet
+      get_url:
+        url: https://archive.apache.org/dist/tomcat/tomcat-10/v10.1.6/bin/apache-tomcat-10.1.6.exe
+        dest: /home/maha/myfolder/apache-tomcat-10.1.6.exe
+        force_basic_auth: yes
