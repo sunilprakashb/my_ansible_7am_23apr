@@ -1,6 +1,5 @@
 ---
-# tasks file for mywebrole
-- name: install apache2 webserver
-  apt:
-    name: apache2
-    state: present
+- hosts: 172.31.30.14
+  become: yes
+  roles:
+   - {role: mywebrole, when: ansible_os_family=="Debian"}
