@@ -1,5 +1,0 @@
----
-- hosts: 172.31.30.14
-  become: yes
-  roles:
-   - {role: mywebrole, when: ansible_os_family=="Debian"}
