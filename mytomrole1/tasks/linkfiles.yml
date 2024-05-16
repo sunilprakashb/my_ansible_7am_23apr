@@ -2,9 +2,9 @@
 - name: create link files for tomcatup 
   command: 
        cmd: ln -s /opt/tomcat/bin/startup.sh /usr/local/bin/tomcatup
-       
+       creates: /opt/tomcat/LICENSE
 
 - name: create link files for tomcatdown
   command: 
        cmd: ln -s /opt/tomcat/bin/shutdown.sh /usr/local/bin/tomcatdown
-       
+       creates: /opt/tomcat/LICENSE
